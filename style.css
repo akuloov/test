@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('fonts/AnyConv.com__RobotoCondensed-Bold.woff2'),
+        url('fonts/AnyConv.com__RobotoCondensed-Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular-webfont.woff2'),
+        url('fonts/roboto-regular-webfont.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-bold_0-webfont.woff2'),
+        url('fonts/roboto-bold_0-webfont.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 260px;
+    padding: 20px 20px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.block {
+    height: 260px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+    border-style: solid;
+    position: relative;
+    background-image: url(image/main-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 15px;
+}
+
+.block__text {
+    padding-top: 16px;
+    padding-left: 16px;
+    font-family: RobotoCondensed, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.block__first-text {
+    margin-bottom: 6px;
+    background-color: #8d58e3;
+    border-radius: 2px;
+    max-width: 83px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.block__second-text {
+    color: white;
+    border-radius: 2px;
+    background-color: #e95471;
+    max-width: 76px;
+    text-align: center;
+    padding: 5px;
+}
+
+.block__like {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+
+.block__image_pet {
+    position: absolute;
+    right: -11px;
+    bottom: -11px;
+}
+
+.description {
+    position: relative;
+}
+
+.description__title {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #202454;
+}
+
+.description-star__item {
+    vertical-align: middle;
+}
+
+.description-star__integer {
+    font-size: 12px;
+}
+
+.description__first-price {
+    color: #8ba1ba;
+    font-size: 15px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.first-price__img {
+    background-color: #e95471;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.description__first-price_text {
+    padding-left: 5px;
+}
+
+.description__second-price {
+    color: #7b94b0;
+    font-size: 13px;
+}
+
+.description__second-price::before {
+    content: '';
+    display: block;
+    background-color: #7b94b0;
+    height: 1px;
+    width: 55px;
+    position: absolute;
+    bottom: 10px;
+    left: -2px;
+}
+
+.description__second-price_bold {
+    font-weight: 700;
+    font-size: 20px;
+    color: #202454;
+    padding-left: 1px;
+}
+
+.buy {
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
